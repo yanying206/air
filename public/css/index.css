@@ -1,0 +1,271 @@
+body{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+ul{list-style:none;}
+a{color:#fff;}
+a:hover{text-decoration:none;color:#fff;}
+.h4{
+  color:#fff;
+  font-weight:700;
+}
+.my_bbf{
+  font-size:1.5rem;
+  color:#000;
+  font-weight:400;
+}
+.my_swf{
+  color:#fff;
+  font-size:1.2rem;
+  font-weight:400;
+}
+#header{
+  background:url(../img/banner-bg.jpg)center center no-repeat;
+  background-size:cover;
+}
+header div.left{
+  background:rgba(0,0,0,0.5);
+  width:100%;
+  padding-left:10%;
+}
+header div.logo{
+  padding-top:12%;
+  margin-bottom:6rem;
+}
+header div.left>ul li{
+  width:80%;
+  height:4rem;
+  line-height:4rem;
+  background:rgba(250, 250, 250, 0.1);
+}
+header div.left>ul li:hover{
+  background:rgba(255, 225, 101, 0.5);
+}
+header div.left>ul li>p{
+  width:15%;
+  height:100%;
+  float:right;
+  background:rgba(250, 250, 250, 0.2);
+  text-align:center;
+}
+.f{
+  font-size:3em;
+  font-weight:700;
+  color:#fff;
+}
+header div.left>a{
+  width:10em;
+  height:2.8em;
+  line-height:2.8em;
+  background:#ffe165;
+  margin-top:2.4em !important;
+}
+.right{
+  background:rgba(255,255,255,0.9);
+  width:80%;
+  position:absolute;
+  top:25%;
+  left:14%;
+}
+div.right>div{
+  width:90%;
+}
+.form{
+  width:100%;
+  height:80%;
+  border-top:1px solid #ddd;
+}
+div.right button{
+  background:#ffe165;
+  font-size:0.9em;
+  font-weight:bold;
+}
+.my_font{
+  font-size:0.8em;
+  padding:0.5em;
+}
+.ibg {
+  background: #ddd;
+}
+#weather>h4{
+  color:#000;
+}
+#weather ul.nav{
+  width:100%;
+  background:rgba(31, 54, 70, 0.5);
+  border-radius:0.3em;
+}
+#weather ul.nav li{
+  font-size:15px;
+  color:#fff;
+  font-weight:700;
+  width:20%;
+}
+#weather ul.nav li a{
+  padding:15% 0;
+}
+#weather .nav-pills .nav-link.active{
+  background:#ffe165;
+}
+#weather div.tab-content{
+  background:url(../img/weather-bg.jpg)center center no-repeat;
+  background-size:cover;
+  width:100%;
+}
+#weather div.tab-content div.tab-pane div.col-md-4 div{
+  margin:20% auto;
+  background:rgba(255,255,255,0.5);
+  width:80%;
+  padding-bottom:10%;
+}
+#weather div.tab-content div.tab-pane div.col-md-4 div ul{
+  background:#fff;
+  width:80%;
+  margin:0 auto;
+  padding:5%;
+}
+#weather div.tab-content div.tab-pane div.col-md-4 div ul li p{
+  margin:0 auto;
+}
+#weather div.tab-content div.tab-pane div.col-md-4 div ul span{
+  background:#ddd;
+  padding:10% 0;
+  display:inline-block;
+  width:80%;
+  margin-top:20%;
+  margin-bottom:10%;
+}
+div.services .service-item{
+  width:90%;
+  background:#1f3646;
+  color:#fff;
+  text-align: center;
+  padding:3em 2em 2em;
+}
+div.services .service-item:hover{
+  background:#ffe165;
+  color:#000;
+}
+div.service-icon{
+  display:inline-block;
+  width:64px;
+  height:64px;
+  text-align:center;
+}
+div.services .first .service-icon{
+  background:url(../img/service-icon-01.png)no-repeat;
+  transition:all 0.5s;
+}
+div.services .second .service-icon{
+  background:url(../img/service-icon-02.png)no-repeat;
+  transition:all 0.5s;
+}
+div.services .third .service-icon{
+  background:url(../img/service-icon-03.png)no-repeat;
+  transition:all 0.5s;
+}
+div.services .first:hover .service-icon{
+  background:url(../img/service-icon-01.1.png)no-repeat;
+}
+div.services .second:hover .service-icon{
+  background:url(../img/service-icon-02.2.png)no-repeat;
+}
+div.services .third:hover .service-icon{
+  background:url(../img/service-icon-03.3.png)no-repeat;
+}
+
+#recommended-hotel{
+  margin-top:100px;
+  background-color:#f4f4f4;
+  padding:80px 0px;
+}
+#recommended-hotel .tabs{
+  margin-top:4em;
+}
+#recommended-hotel .tabs li{
+  background-color:#1f3646;
+  width:90%;
+  height:3.1em;
+  line-height:3.1em;
+  margin-top:0.15em;
+  position:relative;
+}
+#recommended-hotel .tabs li a{
+  width:100%;
+}
+#recommended-hotel .tabs li a i{
+  position:absolute;
+  right:0;
+  width:20%;
+  height:1.8em;
+  line-height:1.5em;
+  background-color:rgba(255,255,255,0.2);
+  font-size:2em;
+  text-align:center;
+}
+#recommended-hotel .nav-pills .nav-link{
+  padding:0;
+  padding-left:1.2em;
+  height:3.1em;
+  border-radius:0;
+}
+#recommended-hotel .nav-pills .nav-link.active{
+  background:#ffe165;
+  color:#000;
+}
+#recommended-hotel div.row div.tab-content{
+  margin-top:4.3em;
+}
+#recommended-hotel div.row div.tab-content img{
+  position:relative;
+}
+#recommended-hotel div.row div.tab-content .tab-pane>p{
+  position:absolute;
+  bottom:0.5em;
+  left:0;
+  width:101.5%;
+  height:4em;
+  background-color:rgba(31, 54, 70, 0.9);
+}
+#recommended-hotel .carousel-caption{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  padding-bottom:0;
+  width:101.5%;
+  height:4em;
+}
+.carousel-indicators{
+  position:absolute;
+  right:0.5em;
+  left:40em;
+  margin-right:0 !important;
+  margin-left:0;
+}
+#recommended-hotel div.row div.tab-content .tab-pane ul li{
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:#fff;
+}
+#recommended-hotel div.row div.tab-content .tab-pane ul li.active{
+  background:#ffe165;
+}
+#most-visited{
+  margin-bottom:10em;
+}
+#most-visited .caption{
+  background-color: #f4f4f4;
+  width:17em;
+  height:5em;
+  position: absolute;
+  bottom:-5em;
+  padding-left:2em;
+  padding-top:0.5em;
+}
+#most-visited .caption span{
+  color:#3f6f90;
+  font-weight:600;
+}
