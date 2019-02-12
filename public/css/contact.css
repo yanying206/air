@@ -1,0 +1,52 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+ul{list-style:none;}
+a{color:#fff;}
+a:hover{text-decoration:none;color:#fff;}
+header{
+    background:url(../img/banner-bg.jpg)center center no-repeat;
+    background-size:cover;
+    margin-bottom:5em;
+}
+header div.logo{
+    padding:6em 0 6em 6em;
+}
+header div.b{
+    padding-bottom:2em;
+    margin-left:75%;
+}
+header div.b button{
+    background:#ffe165;
+}
+section div.head{
+    width:50%;
+    margin:0 auto;
+}
+section div.img{
+    width:80%;
+    margin:0 auto;
+}
+div.contact{
+    background-image:url(../img/contact-bg.jpg);
+}
+div.contact div.row{
+    padding-top:5em;
+    margin-top:5em;
+    width:60%;
+    margin:0 auto;
+}
+div.contact div.row button{
+    background:#ffe165;
+}
+footer {
+    text-align: center;
+    background-color: #1f3646;
+    padding: 60px 0px;
+
+}
+footer a{
+    background-color:#ffe165 !important;
+}

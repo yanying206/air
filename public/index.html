@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+<header>
+  <iframe src="header.html" class="my_header border-0" scrolling="none" style="width:100%;height:6em;"></iframe>
+</header>
+<header id="header">
+  <div class="container-fluid m-0 p-0">
+    <div class="row d-flex m-0 p-0">
+      <div class="col-md-6 col-sm-12 p-0 left-item">
+        <div class="left text-lg-left text-sm-center">
+          <div class="logo">
+            <img src="img/logo.png">
+          </div>
+          <h4 class="h4">Choose Your Direction:</h4>
+          <ul class="p-0">
+            <li class="pl-md-3 pl-sm-1 mb-3"><a href="#" class="my_swf">FIND US ON <b>FACEBOOK</b></a><p class="f">f</p></li>
+            <li class="pl-md-3 pl-sm-1 mb-3">
+              <a href="#" class="my_swf">OUR <b>YOUTUBE</b> CHANNEL</a>
+              <p class="f">Y</p>
+            </li>
+            <li class="pl-md-3 pl-sm-1 mb-3">
+              <a href="#" class="my_swf">FOLLOW OUR <b>INSTAGRAM</b></a>
+              <p class="f">I</p>
+            </li>
+          </ul>
+          <a href="contact.html" class="btn h4 text-dark m-0 p-0">Cotact Us Now</a>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 p-0 right-item">
+        <div class="right p-0">
+          <div class="m-auto p-0">
+            <h5 class="mt-4 mb-3">Check availability for direction:</h5>
+            <div class="row form">
+              <div class="col-md-6 col-sm-12">
+                <fieldset class="mt-4">
+                  <label for="from">From:</label>
+                  <select id="from" class="my_font w-100  form-control">
+                    <option value="">Select a location...</option>
+                    <option value="Cambodia">Cambodia</option>
+                    <option value="Hong Kong">Hong Kong</option>
+                    <option value="India">India</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Korea">Korea</option>
+                    <option value="Laos">Laos</option>
+                    <option value="Myanmar">Myanmar</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Vietnam">Vietnam</option>
+                  </select>
+                </fieldset>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <fieldset class="mt-4">
+                  <label for="to">To:</label>
+                  <select id="to" class="my_font w-100 form-control">
+                    <option value="">Select a location...</option>
+                    <option value="Cambodia">Cambodia</option>
+                    <option value="Hong Kong">Hong Kong</option>
+                    <option value="India">India</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Korea">Korea</option>
+                    <option value="Laos">Laos</option>
+                    <option value="Myanmar">Myanmar</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Vietnam">Vietnam</option>
+                  </select>
+                </fieldset>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <fieldset class="mt-3">
+                  <label for="departure">Departure date:</label>
+                  <input name="deparure" type="text" class="form-control date my_font" id="departure" placeholder="Select date...">
+                </fieldset>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <fieldset class="mt-3">
+                  <label for="return">Return date:</label>
+                  <input type="text" class="form-control date my_font" id="return" placeholder="Select date..." >
+                </fieldset>
+              </div>
+              <div class="col-lg-6 col-sm-12 pr-0">
+                <fieldset class="mt-4 pt-2 pb-2">
+                  <label for="Round" class="pr-1 my_font font-weight-bold">ROUND</label><input type="radio" name="trip" id="Round">
+                  <label for="Oneway" class="pr-1 my_font font-weight-bold">ONEWAY</label><input type="radio" name="trip" id="Oneway">
+                </fieldset>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <fieldset>
+                  <button class="btn w-100 bg" type="submit">Order Ticket Now</button>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div id="weather" class="container">
+  <h4 class="text-center mb-5 mt-5 h4">CHECK WEATHER FOR 5 NEXT DAYS</h4>
+  <div class="row text-center m-0">
+    <ul class="col-md-12 d-flex p-0 nav nav-pills">
+      <li class="nav-item"><a href="#monday" class="nav-link active" data-toggle="pill">MONDAY</a></li>
+      <li class="nav-item"><a href="#tuesday" class="nav-link" data-toggle="pill">TUESDAY</a></li>
+      <li class="nav-item"><a href="#wednesday" class="nav-link" data-toggle="pill">WEDNESDAY</a></li>
+      <li class="nav-item"><a href="#thursday" class="nav-link" data-toggle="pill">THURSDAY</a></li>
+      <li class="nav-item"><a href="#friday" class="nav-link" data-toggle="pill">FRIDAY</a></li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane active" id="monday">
+        <div class="row m-0">
+          <div class="p-0 col-md-4 col-sm-12">
+            <div>
+              <h5 class="text-white pt-5 pb-4">Myanmar</h5>
+              <img src="img/weather-icon-03.png">
+              <h4 class="pt-4 pb-5">32&deg;C</h4>
+              <ul class="d-flex row">
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>06AM <span>26&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>12PM <span>32&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>06PM <span>28&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>12AM <span>22&deg;</span></p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-0 col-md-4 col-sm-12">
+            <div>
+              <h5 class="text-white pt-5 pb-4">Thailand</h5>
+              <img src="img/weather-icon-02.png">
+              <h4 class="pt-4 pb-5">28&deg;C</h4>
+              <ul class="d-flex row">
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>06AM <span>20&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>12PM <span>28&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>06PM <span>26&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>12AM <span>18&deg;</span></p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-0 col-md-4 col-sm-12">
+            <div>
+              <h5 class="text-white pt-5 pb-4">India</h5>
+              <img src="img/weather-icon-01.png">
+              <h4 class="pt-4 pb-5">33&deg;C</h4>
+              <ul class="d-flex row">
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>6AM <span>26&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>12PM <span>33&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>6PM <span>29&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>12AM <span>27&deg;</span></p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="tuesday">
+        <div class="row m-0">
+          <div class="p-0 col-md-4 col-sm-12">
+            <div>
+              <h5 class="text-white pt-5 pb-4">Myanmar</h5>
+              <img src="img/weather-icon-02.png">
+              <h4 class="pt-4 pb-5">28&deg;C</h4>
+              <ul class="d-flex row">
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>06AM <span>18&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>12PM <span>27&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>06PM <span>25&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>12AM <span>17&deg;</span></p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-0 col-md-4 col-sm-12">
+            <div>
+              <h5 class="text-white pt-5 pb-4">Thailand</h5>
+              <img src="img/weather-icon-03.png">
+              <h4 class="pt-4 pb-5">31&deg;C</h4>
+              <ul class="d-flex row">
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>06AM <span>19&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>12PM <span>28&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>06PM <span>22&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>12AM <span>18&deg;</span></p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-0 col-md-4 col-sm-12">
+            <div>
+              <h5 class="text-white pt-5 pb-4">India</h5>
+              <img src="img/weather-icon-01.png">
+              <h4 class="pt-4 pb-5">26&deg;C</h4>
+              <ul class="d-flex row">
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>06AM <span>19&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>12PM <span>26&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>06PM <span>22&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>12AM <span>20&deg;</span></p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="wednesday">
+        <div class="row m-0">
+          <div class="p-0 col-md-4 col-sm-12">
+            <div>
+              <h5 class="text-white pt-5 pb-4">Myanmar</h5>
+              <img src="img/weather-icon-03.png">
+              <h4 class="pt-4 pb-5">31&deg;C</h4>
+              <ul class="d-flex row">
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>6AM <span>19&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>12PM <span>28&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>6PM <span>22&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>12AM <span>18&deg;</span></p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-0 col-md-4 col-sm-12">
+            <div>
+              <h5 class="text-white pt-5 pb-4">Thailand</h5>
+              <img src="img/weather-icon-01.png">
+              <h4 class="pt-4 pb-5">34&deg;C</h4>
+              <ul class="d-flex row">
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>6AM <span>28&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>12PM <span>34&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>6PM <span>30&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>12AM <span>29&deg;</span></p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-0 col-md-4 col-sm-12">
+            <div>
+              <h5 class="text-white pt-5 pb-4">India</h5>
+              <img src="img/weather-icon-02.png">
+              <h4 class="pt-4 pb-5">28&deg;C</h4>
+              <ul class="d-flex row">
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>6AM <span>18&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>12PM <span>27&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>6PM <span>25&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>12AM <span>17&deg;</span></p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="thursday">
+        <div class="row m-0">
+          <div class="p-0 col-md-4 col-sm-12">
+            <div>
+              <h5 class="text-white pt-5 pb-4">Myanmar</h5>
+              <img src="img/weather-icon-01.png">
+              <h4 class="pt-4 pb-5">27&deg;C</h4>
+              <ul class="d-flex row">
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>6AM <span>21&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>12PM <span>27&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>6PM <span>22&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>12AM <span>18&deg;</span></p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-0 col-md-4 col-sm-12">
+            <div>
+              <h5 class="text-white pt-5 pb-4">Thailand</h5>
+              <img src="img/weather-icon-02.png">
+              <h4 class="pt-4 pb-5">28&deg;C</h4>
+              <ul class="d-flex row">
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>6AM <span>18&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>12PM <span>27&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>6PM <span>25&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>12AM <span>17&deg;</span></p></li>
+            </ul>
+            </div>
+          </div>
+          <div class="p-0 col-md-4 col-sm-12">
+            <div>
+              <h5 class="text-white pt-5 pb-4">India</h5>
+              <img src="img/weather-icon-03.png">
+              <h4 class="pt-4 pb-5">31&deg;C</h4>
+              <ul class="d-flex row">
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>6AM <span>19&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>12PM <span>28&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>6PM <span>22&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>12AM <span>18&deg;</span></p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="friday">
+        <div class="row m-0">
+          <div class="p-0 col-md-4 col-sm-12">
+            <div>
+              <h5 class="text-white pt-5 pb-4">Myanmar</h5>
+              <img src="img/weather-icon-03.png">
+              <h4 class="pt-4 pb-5">33&deg;C</h4>
+              <ul class="d-flex row">
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>6AM <span>28&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>12PM <span>33&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>6PM <span>29&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>12AM <span>27&deg;</span></p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-0 col-md-4 col-sm-12">
+            <div>
+              <h5 class="text-white pt-5 pb-4">Thailand</h5>
+              <img src="img/weather-icon-02.png">
+              <h4 class="pt-4 pb-5">31&deg;C</h4>
+              <ul class="d-flex row">
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>6AM <span>24&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>12PM <span>31&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>6PM <span>26&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>12AM <span>23&deg;</span></p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-0 col-md-4 col-sm-12">
+            <div>
+              <h5 class="text-white pt-5 pb-4">India</h5>
+              <img src="img/weather-icon-01.png">
+              <h4 class="pt-4 pb-5">28&deg;C</h4>
+              <ul class="d-flex row">
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>6AM <span>24&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0"><p>12PM <span>28&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>6PM <span>26&deg;</span></p></li>
+                <li class="d-flex flex-column col-lg-3 col-sm-6 p-0 pt-lg-0 pt-sm-4"><p>12AM <span>22&deg;</span></p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="services container mt-5">
+  <div class="row m-0">
+    <div class="col-md-4 mt-3 col-sm-12 p-0">
+      <div class="service-item first text-center m-auto">
+        <div class="service-icon"></div>
+        <h4 class="mt-4">Easy Tooplate</h4>
+        <p>Donec varius porttitor iaculis. Integer sollicitudin erat et ligula viverra vulputate. In in quam efficitur, pulvinar justo ut, tempor nunc. Phasellus pharetra quis odio.</p>
+      </div>
+    </div>
+    <div class="col-md-4 mt-3 col-sm-12 p-0">
+      <div class="service-item second text-center m-auto">
+        <div class="service-icon"></div>
+        <h4 class="mt-4">UNIQUE IDEAS</h4>
+        <p>Cras ligula diam, tristique at aliquam at, fermentum auctor turpis. Proin leo massa, iaculis elementum massa et, consectetur varius dolor. Fusce sed ipsum sit.</p>
+      </div>
+    </div>
+    <div class="col-md-4 mt-3 col-sm-12 p-0">
+      <div class="service-item third text-center m-auto">
+        <div class="service-icon"></div>
+        <h4 class="mt-4">BEST SUPPORT</h4>
+        <p>Fusce leo dui. Mauris et justo eget arcu ultricies porta. Nulla facilisi. Nulla nec risus sit amet magna hendrerit venenatis. Sed porta tincidunt lectus eget ultrices.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tabs-content" id="recommended-hotel">
+  <div class="container">
+    <h4 class="text-center">RECOMMENDED HOTEL FOR YOU</h4>
+    <div class="row">
+      <div class="col-md-4 col-sm-12">
+        <ul class="tabs nav nav-pills" data-tabgroup="third-tab-group">
+          <li class="h4 nav-item"><a href="#livingroom"  class="nav-link active" data-toggle="pill">Living Room <i class="fa">></i></a></li>
+          <li class="h4 nav-item"><a href="#suitroom"  class="nav-link" data-toggle="pill">Suit Room <i class="fa">></i></a></li>
+          <li class="h4 nav-item"><a href="#swimingpool"  class="nav-link" data-toggle="pill">Swiming Pool <i class="fa">></i></a></li>
+          <li class="h4 nav-item"><a href="#massage"  class="nav-link" data-toggle="pill">Massage Service <i class="fa">></i></a></li>
+          <li class="h4 nav-item"><a href="#fitness"  class="nav-link" data-toggle="pill">Fitness Life <i class="fa">></i></a></li>
+          <li class="h4 nav-item"><a href="#event"  class="nav-link" data-toggle="pill">Evening Event <i class="fa">></i></a></li>
+        </ul>
+      </div>
+      <div class="col-md-8 col-sm-12 p-0">
+        <div class="tab-content">
+          <div class="tab-pane active" id="livingroom">
+            <img src="img/suite-01.jpg">
+          </div>
+          <div class="tab-pane carousel" data-ride="carousel" id="suitroom">
+            <div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/suite-02.jpg">
+                <div class="carousel-caption p-0">
+                  <h4 class="h4 m-0 text-left  pl-3 pt-2">Clean And Relaxing Room</h4>
+                  <p class="my_swf text-left  pl-3">Aurora Resort</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/suite-01.jpg">
+                <div class="carousel-caption p-0">
+                  <h4 class="h4 m-0 text-left  pl-3 pt-2">Special Suite Room TV</h4>
+                  <p class="my_swf text-left  pl-3">Khao Yai Hotel</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/suite-03.jpg">
+                <div class="carousel-caption p-0">
+                  <h4 class="h4 m-0 text-left  pl-3 pt-2">The Best Sitting</h4>
+                  <p class="my_swf text-left  pl-3">Hotel Grand</p>
+                </div>
+              </div>
+            </div>
+            <ul class="carousel-indicators">
+              <li class="active" data-slide-to="0" data-target="#suitroom"></li>
+              <li data-slide-to="1" data-target="#suitroom"></li>
+              <li data-slide-to="2" data-target="#suitroom"></li>
+            </ul>
+            </div>
+          </div>
+          <div class="tab-pane" id="swimingpool">
+            <img src="img/swiming-pool.jpg">
+            <p class="m-0 d-flex flex-column pl-3 pt-2">
+              <span class="h4 m-0">Lovely View Swiming Pool For Special Guests</span>
+              <span class="my_swf">Victoria Resort and Spa</span>
+            </p>
+          </div>
+          <div class="tab-pane" id="massage">
+            <img src="img/massage-service.jpg">
+            <p class="m-0 d-flex flex-column pl-3 pt-2">
+              <span class="h4 m-0">Perfect Place For Relaxation</span>
+              <span class="my_swf">Napali Beach</span>
+            </p>
+          </div>
+          <div class="tab-pane" id="fitness">
+            <img src="img/fitness-service.jpg">
+            <p class="m-0 d-flex flex-column pl-3 pt-2">
+              <span class="h4 m-0">Insane Street Workout</span>
+              <span class="my_swf">Hua Hin Beach</span>
+            </p>
+          </div>
+          <div class="tab-pane" id="event">
+            <img src="img/evening-event.jpg">
+            <p class="m-0 d-flex flex-column pl-3 pt-2">
+              <span class="h4 m-0">Finest Winery Night</span>
+              <span class="my_swf">Queen Restaurant</span>
+            </p>
+          </div>
+        </div>
+      </div>
+ </div>
+  </div>
+</div>
+<div id="most-visited">
+  <div class="container mt-5">
+    <h4 class="h4 text-center text-dark pt-5">MOST VISITED PLACES</h4>
+    <div class="row mt-5">
+      <div class="col-md-3">
+        <img src="img/place-01.jpg">
+        <div class="caption">
+          <h5>River Views</h5>
+          <span>New York</span>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <img src="img/place-02.jpg">
+        <div class="caption">
+          <h5>Lorem ipsum dolor</h5>
+          <span>Tokyo</span>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <img src="img/place-03.jpg">
+        <div class="caption">
+          <h5>Proin dignissim</h5>
+          <span>Paris</span>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <img src="img/place-04.jpg">
+        <div class="caption">
+          <h5>Fusce sed ipsum</h5>
+          <span>Hollywood</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <iframe src="footer.html" class="my_footer border-0" scrolling="none" style="width:100%; height:15.4em;"></iframe>
+</footer>
+</body>
+</html>
